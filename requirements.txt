@@ -1,5 +1,5 @@
-tensorflow==2.17.1
-keras==2.15.0  # Cambia a una versión disponible y compatible con tensorflow==2.17.1
+tensorflow
+keras
 numpy<2.0
 protobuf==3.20.*
 opencv-python-headless
