@@ -1,4 +1,3 @@
-
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
@@ -8,7 +7,8 @@ import cv2
 import os
 
 TAMANO_IMG = 128
-mi_clases = ['sakura', 'agustin']
+# Actualizar las clases a 'Miguel' y 'Franco'
+mi_clases = ['Miguel', 'Franco']
 
 def load_and_preprocess_image(file_path, label):
     file_path = tf.cast(file_path, tf.string)
@@ -20,7 +20,7 @@ def load_and_preprocess_image(file_path, label):
 
 image_paths = []
 labels = []
-base_dir = 'caras_fotos'  
+base_dir = 'caras_fotos'  # Asegúrate de que la ruta base sea correcta
 
 for i, mi_clase in enumerate(mi_clases):
     class_dir = os.path.join(base_dir, mi_clase)
