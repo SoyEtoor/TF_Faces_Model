@@ -1,5 +1,5 @@
 tensorflow==2.17.1
-keras==2.8.0rc
+keras==3.2.1
 numpy<2.0
 protobuf==3.20.*
 opencv-python-headless
